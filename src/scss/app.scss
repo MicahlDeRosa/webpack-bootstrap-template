@@ -1,3 +1,4 @@
+// Override Bootstrap variables here
 $body-bg: #000;
 $btn-padding-y: 50px;
 
@@ -7,10 +8,11 @@ $theme-colors:
     "nice": green
   );
 
+// Include Bootstrap SASS here. This will allow our overrides to take effect.
 @import '~bootstrap/scss/bootstrap';
 
+// Your regular styles here
 .my-heading {
-    // background: theme-color("secondary");
-    background: theme-color-level('secondary', -10);
+    background: theme-color("secondary");
     border: 3px solid theme-color('warning');
 }
