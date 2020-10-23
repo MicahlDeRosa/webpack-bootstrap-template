@@ -1,0 +1,16 @@
+$body-bg: #000;
+$btn-padding-y: 50px;
+
+$theme-colors:
+  (
+    "primary": coral,
+    "nice": green
+  );
+
+@import '~bootstrap/scss/bootstrap';
+
+.my-heading {
+    // background: theme-color("secondary");
+    background: theme-color-level('secondary', -10);
+    border: 3px solid theme-color('warning');
+}
